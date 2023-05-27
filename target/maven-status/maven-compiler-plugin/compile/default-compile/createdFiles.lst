@@ -1,0 +1,4 @@
+com\mailsender\EmailSenderController.class
+com\mailsender\EmailSenderService.class
+com\mailsender\MailsenderApplication.class
+com\mailsender\EmailDto.class

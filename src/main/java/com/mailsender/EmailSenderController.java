@@ -1,7 +1,5 @@
 package com.mailsender;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -14,6 +12,7 @@ public class EmailSenderController {
         this.emailSenderService = emailSenderService;
     }
 
+    @CrossOrigin
     @PostMapping("/mail")
     public String sendEmail(@RequestBody EmailDto email){
         emailSenderService.sendEmail("ayon1524@gmail.com", email);

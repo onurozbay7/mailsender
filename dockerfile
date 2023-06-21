@@ -3,7 +3,7 @@
 #
 FROM openjdk:17 AS build
 COPY . .
-RUN mvn clean package -DskipTests
+RUN mvn mvn -DskipTests=true clean package
 
 #
 # Package stage

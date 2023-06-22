@@ -15,7 +15,7 @@ public class EmailSenderController {
     @CrossOrigin
     @PostMapping("/mail")
     public String sendEmail(@RequestBody EmailDto email){
-        emailSenderService.sendEmail("ayon1524@gmail.com", email);
+        emailSenderService.sendEmail("info@greatbearfitness.co.uk", email);
 
         return  "Mail sent successfully";
     }
